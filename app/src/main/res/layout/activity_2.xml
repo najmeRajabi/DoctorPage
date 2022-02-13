@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/profile_Image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/doctor_circle"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:text="Helen.B"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/profile_Image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="New York , NY"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@id/profile_Image"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/doctor"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline4"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#33C8E3C9"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="15dp"
+        android:stateListAnimator="@null"
+        android:text=" Online \n visit "
+        android:textAllCaps="false"
+        android:textColor="#444444"
+        android:textSize="10dp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_rss_feed_24"
+        app:iconGravity="top"
+        app:iconSize="35dp"
+        app:iconTint="#83E187"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#33A788DF"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="15dp"
+        android:stateListAnimator="@null"
+        android:text="Home consulation"
+        android:textAllCaps="false"
+        android:textColor="#444444"
+        android:textSize="10dp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconGravity="top"
+        app:iconSize="35dp"
+        app:iconTint="#CCA788DF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#33B2B5E6"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="15dp"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        android:stateListAnimator="@null"
+        android:text="Book an appointment"
+        android:textAllCaps="false"
+        android:textColor="#444444"
+        android:textColorLink="#FFFFFF"
+        android:textSize="10dp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:elevation="0dp"
+        app:icon="@drawable/ic_baseline_assignment_24"
+        app:iconGravity="top"
+        app:iconSize="35dp"
+        app:iconTint="#636BEC"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#33ED9DB8"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="15dp"
+        android:stateListAnimator="@null"
+        android:text="Favorite"
+        android:textAllCaps="false"
+        android:textColor="#444444"
+        android:textSize="10dp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_favorite_24"
+        app:iconGravity="top"
+        app:iconSize="35dp"
+        app:iconTint="#D8443A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner"
+        android:backgroundTint="#338091EF"
+        android:focusable="auto"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
+        app:layout_constraintVertical_bias="0.157">
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#5568D1"
+            app:bt_colorInactive="#7682C3"
+            app:bt_icon="@drawable/ic_baseline_home_24"
+            app:bt_padding="15dp"
+            app:bt_titlePadding="8dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#5568D1"
+            app:bt_colorInactive="#7682C3"
+            app:bt_icon="@drawable/ic_medical"
+            app:bt_padding="15dp"
+            app:bt_titlePadding="8dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#5568D1"
+            app:bt_colorInactive="#7682C3"
+            app:bt_icon="@drawable/ic_person_24"
+            app:bt_padding="15dp"
+            app:bt_titlePadding="8dp" />
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
