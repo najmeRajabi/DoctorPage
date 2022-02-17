@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">صفحه دکتر</string>
+    <string name="name_text">هلنا</string>
+    <string name="city_text">نیویورک</string>
+    <string name="online_btn_text">آنلاین</string>
+    <string name="home_btn_text">خانه</string>
+    <string name="book_btn_text">کتاب</string>
+    <string name="favorite_btn_text">مورد علاقه ها</string>
+</resources>

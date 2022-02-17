@@ -13,6 +13,7 @@ class Activity2 : AppCompatActivity() {
         setContentView(view)
         setContentView(R.layout.activity_2)
 
+        val name = intent.getStringExtra("name")
 
 
     }
