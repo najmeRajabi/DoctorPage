@@ -10,40 +10,46 @@
         android:id="@+id/btn_doctor1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
         android:layout_marginHorizontal="30dp"
-        app:cornerRadius="10dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/b_nazanin_font"
         android:minHeight="60dp"
-        android:text="@string/doctor1"/>
+        android:text="@string/doctor1"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_doctor2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_doctor1"
-        android:layout_marginTop="50dp"
         android:layout_marginHorizontal="30dp"
-        app:cornerRadius="10dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/b_nazanin_font"
         android:minHeight="60dp"
-        android:text="@string/doctor2"/>
+        android:text="@string/doctor2"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_doctor1" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_doctor3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_doctor2"
-        android:layout_marginTop="50dp"
         android:layout_marginHorizontal="30dp"
-        app:cornerRadius="10dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/b_nazanin_font"
         android:minHeight="60dp"
-        android:text="@string/doctor3"/>
-
-
+        android:text="@string/doctor3"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_doctor2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

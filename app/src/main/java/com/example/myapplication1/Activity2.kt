@@ -17,7 +17,9 @@ class Activity2 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        title = getString(R.string.doctor)
+        var doctor = intent.getParcelableExtra<Doctor>(DOCTOR)!!
+
+        title = doctor.name
 
 
 

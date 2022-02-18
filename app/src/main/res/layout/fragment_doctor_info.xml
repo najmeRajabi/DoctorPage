@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/text_name"
@@ -29,7 +30,8 @@
         app:layout_constraintStart_toEndOf="@id/profile_Image"
         app:layout_constraintTop_toTopOf="parent"
         app:drawableStartCompat="@drawable/ic_baseline_account_circle_24"
-        android:drawablePadding="10dp"/>
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/b_nazanin_font"/>
 
     <TextView
         android:id="@+id/address_txv"
@@ -41,7 +43,8 @@
         app:layout_constraintStart_toEndOf="@id/profile_Image"
         app:layout_constraintTop_toBottomOf="@id/text_name"
         app:drawableStartCompat="@drawable/ic_baseline_location_on_24"
-        android:drawablePadding="10dp"/>
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/b_nazanin_font"/>
     <TextView
         android:id="@+id/phone_txv"
         android:layout_width="wrap_content"
@@ -54,6 +57,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:drawableStartCompat="@drawable/ic_baseline_phone_24"
         android:drawablePadding="10dp"
-        android:paddingBottom="5dp"/>
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp"
+        android:fontFamily="@font/b_nazanin_font"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
