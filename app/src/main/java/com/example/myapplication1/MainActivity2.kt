@@ -16,22 +16,23 @@ class MainActivity2 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val doctorName =getString(R.string.doctor_name_text)
+
 
         binding.btnDoctor1.text= Hospital.testDataDoctor(0).name
         binding.btnDoctor2.text= Hospital.testDataDoctor(1).name
         binding.btnDoctor3.text= Hospital.testDataDoctor(2).name
 
+        setOnClick()
+
+
+    }
+
+    private fun setOnClick() {
         binding.btnDoctor1.setOnClickListener { goToActivity2(Hospital.testDataDoctor(0)) }
         binding.btnDoctor2.setOnClickListener { goToActivity2(Hospital.testDataDoctor(1)) }
         binding.btnDoctor3.setOnClickListener { goToActivity2(Hospital.testDataDoctor(2)) }
-
-        binding.btnEnter.setOnClickListener {
-            val intent = Intent(this , Activity2::class.java)
-            startActivity(intent)
-        }
-
     }
+
     fun goToActivity2(doctor :Doctor){
         val intent = Intent(this , Activity2::class.java)
 //        intent.putExtra(ID , doctorId)

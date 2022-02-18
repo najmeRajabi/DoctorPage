@@ -17,22 +17,13 @@ class Activity2 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        getDoctor()
-        binding.addressTxv.text = address
-        binding.textName.text = name
-        binding.phoneTxv.text = phoneNumber
+        title = getString(R.string.doctor)
+
+
 
 
 
 
     }
-    fun getDoctor(){
-        doctor = intent.getParcelableExtra<Doctor>(DOCTOR)!!
-        name= doctor.name
-        address = doctor.officeAddress
-        phoneNumber = doctor.phone
-//        name = Hospital.testDataDoctor(id-1).name
-//        address = Hospital.testDataDoctor(id-1).officeAddress
-//        phoneNumber = Hospital.testDataDoctor(id-1).phone
-    }
+
 }
